@@ -1,0 +1,143 @@
+@import url('https://github.com/abdeleaiso-commits/king-discord-theme/king.css');
+
+:root {
+    --background: url('https://i.pinimg.com/736x/6d/e2/a5/6de2a503b4c757231c14faef65ae48db.jpg');
+
+    --king-gold: #D4AF37;
+    --king-gold-light: #F4D97B;
+    --king-gold-dark: #8A6A16;
+    --king-black: #09090C;
+    --king-black-light: #121218;
+    --king-white: #F5F1E6;
+    --king-purple: #6D28D9;
+    --king-purple-dark: #32145F;
+
+    --activetext-colour: var(--king-white);
+
+    --font-primary: "Spectral", serif, "Noto Color Emoji";
+    --font-display: "Spectral", serif, "Noto Color Emoji";
+    --font-code: "DejaVuSansM Nerd Font Mono", "DejaVu Sans Mono", "Consolas", monospace;
+
+    --primary1-colour: var(--king-gold);
+    --primary2-colour: var(--king-gold-light);
+    --primary3-colour: var(--king-gold-dark);
+    --primary4-colour: rgba(212, 175, 55, 0.35);
+
+    --secondary1-colour: rgba(9, 9, 12, 0.45);
+    --secondary2-colour: rgba(18, 18, 24, 0.65);
+    --secondary3-colour: rgba(0, 0, 0, 0.78);
+    --secondary4-colour: rgba(0, 0, 0, 0.45);
+}
+
+:root,
+.theme-midnight {
+    --font-primary: "Spectral", serif, "Noto Color Emoji";
+    --font-display: "Spectral", serif, "Noto Color Emoji";
+    --font-code: "DejaVuSansM Nerd Font Mono", "DejaVu Sans Mono", "Consolas", monospace;
+
+    --oPur-21: rgba(109, 40, 217, 0.15);
+    --oPur-32: rgba(109, 40, 217, 0.25);
+    --oPur-42: rgba(212, 175, 55, 0.35);
+    --oPur-64: rgba(212, 175, 55, 0.65);
+    --oPur-84: rgba(212, 175, 55, 0.85);
+    --oPurple: var(--king-purple);
+
+    --app-frame-border: var(--oPur-42);
+
+    --border-active: var(--oPur-64);
+    --border-normal: var(--oPur-42);
+    --border-strong: var(--oPur-84);
+    --border-subtle: var(--oPur-32);
+
+    --background-brand: var(--oPur-64);
+    --background-modifier-selected: var(--oPur-32);
+    --badge-background-brand: var(--oPur-64);
+
+    --brand-10a: rgba(212, 175, 55, 0.15);
+    --brand-300: var(--oPur-64);
+    --brand-500: var(--oPur-84);
+
+    --control-brand-foreground: var(--king-gold);
+
+    --control-overlay-primary-background-default: rgba(212, 175, 55, 0.12);
+    --control-overlay-primary-background-hover: rgba(212, 175, 55, 0.25);
+    --control-overlay-primary-border-default: var(--king-gold-dark);
+    --control-overlay-primary-border-hover: var(--king-gold);
+    --control-overlay-primary-text-default: var(--king-white);
+    --control-overlay-primary-text-hover: #FFFFFF;
+    --control-primary-background-hover: rgba(212, 175, 55, 0.25);
+
+    --input-border-default: rgba(212, 175, 55, 0.25);
+    --input-border-hover: rgba(212, 175, 55, 0.45);
+    --input-border-active: rgba(212, 175, 55, 0.75);
+
+    --text-brand: var(--king-gold-light);
+    --text-link: var(--king-gold-light);
+    --info-help-foreground: var(--king-gold);
+    --mention-foreground: var(--king-gold);
+
+    --message-highlight-background-default: rgba(212, 175, 55, 0.12);
+    --message-mentioned-background-default: rgba(212, 175, 55, 0.06);
+    --message-mentioned-background-hover: rgba(212, 175, 55, 0.10);
+
+    --spoiler-hidden-background: rgba(109, 40, 217, 0.15);
+    --spoiler-hidden-background-hover: rgba(109, 40, 217, 0.30);
+    --__current--spoiler-background-color: rgba(109, 40, 217, 0.25);
+    --__spoiler-background-color--revealed: rgba(109, 40, 217, 0.12);
+
+    --custom-channel-textarea-text-area-height: 32px;
+    --modal-horizontal-padding: 12px;
+    --modal-vertical-padding: 8px;
+    --modal-width-medium: fit-content;
+    --progressbar-indicator-background: var(--king-gold);
+    --radio-background-selected-default: var(--king-gold);
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--font-primary) !important;
+}
+
+[class*="text"],
+[class*="title"],
+[class*="name"],
+[class*="label"] {
+    font-family: var(--font-primary) !important;
+}
+
+button {
+    color: var(--king-white) !important;
+    border-color: var(--king-gold-dark) !important;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    color: #FFFFFF !important;
+    border-color: var(--king-gold) !important;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
+}
+
+a {
+    color: var(--king-gold-light) !important;
+}
+
+a:hover {
+    color: #FFFFFF !important;
+}
+
+::selection {
+    background: rgba(212, 175, 55, 0.45);
+    color: #FFFFFF;
+}
+
+@keyframes marquee {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
