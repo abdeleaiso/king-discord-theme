@@ -1,7 +1,7 @@
 @import url('https://github.com/abdeleaiso-commits/king-discord-theme/king.css');
 
 :root {
-    --background: url('https://i.pinimg.com/736x/6d/e2/a5/6de2a503b4c757231c14faef65ae48db.jpg');
+    @import url('https://raw.githubusercontent.com/abdeleaiso-commits/king-discord-theme/main/king.css');
 
     --king-gold: #D4AF37;
     --king-gold-light: #F4D97B;
